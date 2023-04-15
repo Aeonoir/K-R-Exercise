@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 #define MAXLINE 1000 // maximum input line size
 
 int my_getline(char s[], int lim);
@@ -9,8 +8,6 @@ void copy(char to[], char from[]);
  
 int main(void)
 {
-    setlocale(LC_ALL, "en_US.UTF-8");
-
     int len; // current line length
     int max; // maximum length seen so far
     char line[MAXLINE]; // current input line
